@@ -1,0 +1,5 @@
+name: github.com/attractornetwork/transaction-explorer
+description: |-
+  Transaction explorer
+  ====================
+  This package allows to provision a Transaction explorer for Attractor network
