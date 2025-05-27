@@ -108,12 +108,12 @@ def run(plan, cfg, stack_info):
             image=service_image,
             ports={
                 service_port_name: PortSpec(
-                    service_port, application_protocol="http", wait="30s"
+                    service_port, application_protocol="http", wait="5m"
                 ),
             },
             public_ports={
                 service_port_name: PortSpec(
-                    service_port, application_protocol="http", wait="30s"
+                    service_port, application_protocol="http", wait="5m"
                 ),
             },
             env_vars=env_vars,

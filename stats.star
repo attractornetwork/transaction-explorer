@@ -29,7 +29,7 @@ def run(plan, cfg, bs_connection_string):
             image=service_image,
             ports={
                 service_port_name: PortSpec(
-                    service_port, application_protocol="http", wait="30s"
+                    service_port, application_protocol="http", wait="5m"
                 ),
             },
             env_vars={

@@ -90,7 +90,7 @@ def run(plan, cfg):
     if backend_exposed:
         public_ports = {
             service_port_name: PortSpec(
-                service_port, application_protocol="http", wait="1m"
+                service_port, application_protocol="http", wait="5m"
             ),
         }
 
@@ -100,7 +100,7 @@ def run(plan, cfg):
             image=service_image,
             ports={
                 service_port_name: PortSpec(
-                    service_port, application_protocol="http", wait="1m"
+                    service_port, application_protocol="http", wait="5m"
                 ),
             },
             public_ports=public_ports,
