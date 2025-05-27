@@ -73,7 +73,7 @@ def run(plan, cfg, stack_info):
         ## API configuration.
         # https://github.com/blockscout/frontend/blob/main/docs/ENVS.md#api-configuration
         "NEXT_PUBLIC_API_PROTOCOL": "https",
-        "NEXT_PUBLIC_API_HOST": "explorer.testnet.attra.me",
+        "NEXT_PUBLIC_API_HOST": "https://explorer.testnet.attra.me",
         "NEXT_PUBLIC_API_WEBSOCKET_PROTOCOL": "wss",
         "NEXT_PUBLIC_USE_NEXT_JS_PROXY": "false",
         # https://github.com/blockscout/frontend/blob/main/docs/ENVS.md#blockchain-statistics
@@ -82,7 +82,7 @@ def run(plan, cfg, stack_info):
         "NEXT_PUBLIC_VISUALIZE_API_HOST": "https://explorer.testnet.attra.me/visualize-api",
         # https://github.com/blockscout/frontend/blob/main/docs/ENVS.md#app-configuration
         "NEXT_PUBLIC_APP_PROTOCOL": "https",
-        "NEXT_PUBLIC_APP_HOST": "explorer.testnet.attra.me",
+        "NEXT_PUBLIC_APP_HOST": "https://explorer.testnet.attra.me",
         ## Remove ads.
         # https://github.com/blockscout/frontend/blob/main/docs/ENVS.md#banner-ads
         "NEXT_PUBLIC_AD_BANNER_PROVIDER": "none",
