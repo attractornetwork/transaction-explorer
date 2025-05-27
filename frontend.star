@@ -72,17 +72,23 @@ def run(plan, cfg, stack_info):
         "NEXT_PUBLIC_TRANSACTION_INTERPRETATION_PROVIDER": "blockscout",
         ## API configuration.
         # https://github.com/blockscout/frontend/blob/main/docs/ENVS.md#api-configuration
-        "NEXT_PUBLIC_API_PROTOCOL": "https",
-        "NEXT_PUBLIC_API_HOST": "https://explorer.testnet.attra.me",
-        "NEXT_PUBLIC_API_WEBSOCKET_PROTOCOL": "wss",
+        "NEXT_PUBLIC_API_PROTOCOL": "http",
+        "NEXT_PUBLIC_API_HOST": api_host,
+        "NEXT_PUBLIC_API_PORT": api_port,
+        "NEXT_PUBLIC_API_WEBSOCKET_PROTOCOL": "ws",
         "NEXT_PUBLIC_USE_NEXT_JS_PROXY": "false",
         # https://github.com/blockscout/frontend/blob/main/docs/ENVS.md#blockchain-statistics
-        "NEXT_PUBLIC_STATS_API_HOST": "https://explorer.testnet.attra.me/stats-api",
+        "NEXT_PUBLIC_STATS_API_HOST": "http://{}:{}".format(
+            stack_info["stats_host"], stack_info["stats_port"]
+        ),
         # https://github.com/blockscout/frontend/blob/main/docs/ENVS.md#solidity-to-uml-diagrams
-        "NEXT_PUBLIC_VISUALIZE_API_HOST": "https://explorer.testnet.attra.me/visualize-api",
+        "NEXT_PUBLIC_VISUALIZE_API_HOST": "http://{}:{}".format(
+            stack_info["visualize_host"], stack_info["visualize_port"]
+        ),
         # https://github.com/blockscout/frontend/blob/main/docs/ENVS.md#app-configuration
-        "NEXT_PUBLIC_APP_PROTOCOL": "https",
-        "NEXT_PUBLIC_APP_HOST": "https://explorer.testnet.attra.me",
+        "NEXT_PUBLIC_APP_PROTOCOL": "http",
+        "NEXT_PUBLIC_APP_HOST": service_ip or "127.0.0.1",
+        "NEXT_PUBLIC_APP_PORT": str(service_port),
         ## Remove ads.
         # https://github.com/blockscout/frontend/blob/main/docs/ENVS.md#banner-ads
         "NEXT_PUBLIC_AD_BANNER_PROVIDER": "none",
