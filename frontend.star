@@ -28,7 +28,8 @@ def run(plan, cfg, stack_info):
         "NEXT_PUBLIC_NETWORK_ID": str(chain_id),
 
         ## Gas native coin configuration
-        "NEXT_PUBLIC_NETWORK_CURRENCY_NAME": "Ether",
+        "NEXT_PUBLIC_NETWORK_CURRENCY_NAME": "Attractor",
+        "NEXT_PUBLIC_NETWORK_CURRENCY_SYMBOL": "ATTRA",
         "NEXT_PUBLIC_NETWORK_CURRENCY_WEI_NAME": "Wei",
         "NEXT_PUBLIC_NETWORK_CURRENCY_DECIMALS": "18",
         "NEXT_PUBLIC_NETWORK_TOKEN_STANDARD_NAME": "ERC",

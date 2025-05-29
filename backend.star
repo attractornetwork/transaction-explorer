@@ -37,7 +37,7 @@ def run(plan, cfg):
         "SUBNETWORK": title,
         "CHAIN_ID": str(chain_id),
         "CHAIN_TYPE": "polygon_zkevm",
-        "COIN": "ETH",
+        "COIN": "ATTRA",
         "ETHEREUM_JSONRPC_VARIANT": "geth",
         "ETHEREUM_JSONRPC_HTTP_URL": rpc_url,
         "ETHEREUM_JSONRPC_TRACE_URL": trace_url,
